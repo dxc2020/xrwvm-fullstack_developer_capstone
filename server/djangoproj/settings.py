@@ -29,15 +29,23 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-'https://davidcui1987-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-'https://davidcui1987-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-'https://davidcui1987-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-'https://davidcui1987-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',]
+                 'https://davidcui1987-8000.\
+                 theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+                 'https://davidcui1987-8000.\
+                 theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
+                 'https://davidcui1987-8000.\
+                 theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+                 'https://davidcui1987-3030.\
+                 theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',]
 
-CSRF_TRUSTED_ORIGINS = ['https://davidcui1987-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-                        'https://davidcui1987-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-                        'https://davidcui1987-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-                        'https://davidcui1987-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',]
+CSRF_TRUSTED_ORIGINS = ['https://davidcui1987-8000.theianext-1-labs-prod-misc-tools-us-east-0.\
+                         proxy.cognitiveclass.ai',
+                        'https://davidcui1987-8000.theianext-0-labs-prod-misc-tools-us-east-0.\
+                         proxy.cognitiveclass.ai',
+                        'https://davidcui1987-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.\
+                         proxy.cognitiveclass.ai',
+                        'https://davidcui1987-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.\
+                         proxy.cognitiveclass.ai',]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -102,7 +110,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.\
+         UserAttributeSimilarityValidator',
     },
     {
         'NAME':
@@ -149,6 +158,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
     os.path.join(BASE_DIR, 'frontend/build'),
-	os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
